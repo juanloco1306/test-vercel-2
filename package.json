@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "build": "node app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +15,9 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.9",
     "path": "^0.12.7",
-    "stripe": "^8.114.0"
+    "stripe": "^8.114.0",
+    "nodemon": "^2.0.4"
+
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
