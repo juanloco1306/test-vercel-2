@@ -1,0 +1,68 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/items
+
+###
+
+GET http://localhost:3000/img/pokemon-rojo.jpg
+
+###
+
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "title": "Pokemon Azul",
+    "price": 9.99,
+    "image": "pokemon-azul.jpg"
+}
+
+###
+
+
+
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "title": "Pokemon Azul",
+    "price": 9.99,
+    "image": "pokemon-azul.jpg"
+}
+
+###
+
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "title": "Pokemon Rojo",
+    "price": 9.99,
+    "image": "pokemon-rojo.jpg"
+}
+
+
+###
+
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "title": "Pokemon Azul",
+    "price": 9.99,
+    "image": "pokemon-azul.jpg"
+}
+
+
+###
+
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "title": "Pokemon Azul",
+    "price": 9.99,
+    "image": "pokemon-azul.jpg"
+}
