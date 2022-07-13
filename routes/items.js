@@ -28,7 +28,7 @@ router.get('/item', async (req, res) => {
 
 // CREATE ITEM
 router.post('/', async (req, res) => {
-  console.log(req.body);
+  /*console.log(req.body);*/
   const item = new Item({
     title: req.body.title,
     price: req.body.price,

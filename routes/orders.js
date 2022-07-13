@@ -7,6 +7,10 @@ const router = express.Router();
 router.post('/', async (req, res) => {
   console.log('BODY', req.body);
   const order = new Order({
+    calle: req.body.calle,
+    colonia: req.body.colonia,
+    delegacion: req.body.delegacion,
+    estado: req.body.estado,
     email: req.body.email,
     items: req.body.items,
   });

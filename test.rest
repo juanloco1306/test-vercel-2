@@ -10,7 +10,7 @@ GET http://localhost:3000/img/pokemon-rojo.jpg
 
 ###
 
-POST http://localhost:3000/items
+POST http://localhost:5000/items
 Content-Type: application/json
 
 {
@@ -65,4 +65,46 @@ Content-Type: application/json
     "title": "Pokemon Azul",
     "price": 9.99,
     "image": "pokemon-azul.jpg"
+}
+
+
+###
+
+POST http://localhost:5000/create-payment-intent
+Content-Type: application/json
+
+{
+    "id": "62cbc922cf03242a3ce0eae8",
+    "qty": 9
+}
+
+###
+
+POST http://localhost:5000/create-payment-intent
+Content-Type: application/json
+
+[
+{
+    "id": "62cd9cd23854a1467c6759d6",
+    "qty": 4
+}
+]
+
+###
+POST http://localhost:5000/order
+Content-Type: application/json
+
+{
+    "calle": "Galicia #172 int 202",
+    "colonia":"Alamos",
+    "delegacion":"Benito Juarez",
+    "estado":"Ciudad de Mexico",
+    "email": "test@hmail.com",
+    "items": [
+        {
+            "id": "62cd9cd23854a1467c6759d6",
+            "qty": 4
+    }
+    ]
+
 }

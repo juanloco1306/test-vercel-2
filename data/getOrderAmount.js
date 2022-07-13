@@ -12,5 +12,6 @@ module.exports = getOrderAmount = async (items) => {
   }
   const onlyTwoDecimals = amount.toFixed(2);
   const parsedAmount = parseInt(onlyTwoDecimals.replace('.', ''), 10);
+  /*console.log(parsedAmount);*/
   return parsedAmount;
 };
